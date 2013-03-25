@@ -9,6 +9,7 @@ categories: event
 ---
 
 ## Nächstes Treffen
+
 Das nächste Treffen findet am Montag, den 6. Mai 2013 um 19 Uhr im Coworkingspace Netting
 im Technologiepark 13 statt.
 
@@ -21,3 +22,8 @@ Wir haben folgende Vorträge für euch organisiert:
 
 Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
+### Location
+
+Coworkingspace Netting - Technologiepark 13
+
+KARTE
