@@ -42,7 +42,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
-    rdiscount (2.0.7.1)
     safe_yaml (0.7.1)
     sass (3.2.7)
     sprockets (2.9.0)
@@ -61,4 +60,3 @@ DEPENDENCIES
   compass
   jekyll!
   jekyll-assets
-  rdiscount
