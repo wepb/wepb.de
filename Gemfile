@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 1.0.0beta2'
+gem 'jekyll', github: 'mojombo/jekyll'
 gem 'rdiscount'
 
 gem 'jekyll-assets'
