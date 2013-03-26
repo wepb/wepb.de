@@ -5,7 +5,7 @@ date:   2013-03-23 13:44:51
 event-date: 2013-05-06 19:00:00
 location: Coworkingspace Netting
 address: Technologiepark 13
-categories: event
+categories: events
 ---
 
 ## Nächstes Treffen
