@@ -6,12 +6,14 @@
     {% stylesheet app %}
   </head>
   <body>
-    <div class="site">
+    <div id="container">
       <header class="title">
         <h1><a href="/">Webentwickler { Paderborn }</a></h1>
       </header>
 
-      {{ content }}
+      <div id="main">
+        {{ content }}
+      </div>
 
       <footer class="footer">
         <a href="/imprint.html">Impressum</a>

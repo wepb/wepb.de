@@ -1,13 +1,44 @@
 @import "compass/reset";
 @import "blueprint/typography";
 
+// Font setting
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 $blueprint-font-size: 13px;
 
+// Colors
+$font-color: #555;
+$header-color: #317EAC;
+$link-color: $header-color;
+$link-focus-color: $link-hover-color;
+$link-active-color: $link-hover-color;
+$link-hover-color: lighten($link-color, 20%);
+$link-visited-color: $link-color;
+
+$body-background-color: lighten(#54B4EB, 33%);
+$container-background-color: #FFF;
+
+$container-border-color: #BBC;
+
+// Misc
+$logo-image: "/images/logo.png";
+
 @include blueprint-typography;
 
-.site {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
+body {
+  background-color: $body-background-color;
+}
+
+#container {
+  background-color: $container-background-color;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 15px;
+  border: 1px solid $container-border-color;
+}
+
+h1 a {
+  // TODO: Replace with logo image
+  // @replace-text-with-dimensions($logo-image);
+  color: $header-color;
+  text-decoration: none;
 }
