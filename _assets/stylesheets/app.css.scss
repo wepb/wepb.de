@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "blueprint/typography";
+@import "compass/css3/images";
 
 // Font setting
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -21,9 +22,13 @@ $container-border-color: #BBC;
 $headline-font-color: $header-color;
 $headline-border-color: #ccc;
 
-// Misc
-$logo-image: "/images/logo.png";
 
+// Images
+$logo-image: "logo.png";
+$body-background-image: "furley_bg.png";
+$footer-background-image: "darkdenim3.png";
+
+// Misc
 @include blueprint-typography;
 
 body {
