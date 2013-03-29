@@ -18,6 +18,8 @@ $body-background-color: lighten(#54B4EB, 33%);
 $container-background-color: #FFF;
 
 $container-border-color: #BBC;
+$headline-font-color: $header-color;
+$headline-border-color: #ccc;
 
 // Misc
 $logo-image: "/images/logo.png";
@@ -41,4 +43,15 @@ h1 a {
   // @replace-text-with-dimensions($logo-image);
   color: $header-color;
   text-decoration: none;
+}
+
+h2 {
+  display: block;
+  border-bottom: 1px solid $headline-border-color;
+  color: $headline-font-color;
+  padding: 40px 15px 2px 0;
+}
+
+h3 {
+  padding-top: 15px;
 }
