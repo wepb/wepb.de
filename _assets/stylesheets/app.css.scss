@@ -18,13 +18,16 @@ $link-active-color: $link-hover-color;
 $link-hover-color: lighten($link-color, 20%);
 $link-visited-color: $link-color;
 
-$container-background-color: #FFF;
 $body-background-color: #eee;
 
-$container-border-color: #BBC;
 $headline-font-color: $header-color;
 $headline-border-color: #ccc;
 
+$footer-background-color: #444;
+$footer-font-color: #ccc;
+
+$header-background-color: #f9f9f9;
+$header-border-color: $headline-border-color;
 
 // Images
 $logo-image: "logo.png";
@@ -62,4 +65,25 @@ h2 {
 
 h3 {
   padding-top: 15px;
+}
+header {
+  border-top: 5px solid $header-color;
+  border-bottom: 1px solid $header-border-color;
+  background-color: $header-background-color;
+  #header-content {
+    @include centered-layout;
+    padding: 20px 0;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  border-top: 5px solid $header-color;
+  background-color: $footer-background-color;
+  background-image: image-url($footer-background-image);
+  #footer-content {
+    @include centered-layout;
+    padding: 40px 0;
+    color: $footer-font-color;
+  }
 }
