@@ -6,6 +6,9 @@
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 $blueprint-font-size: 15px;
 
+// Layout
+$centered-layout-width: 900px;
+
 // Colors
 $font-color: #444;
 $header-color: #317EAC;
@@ -31,8 +34,9 @@ $footer-background-image: "darkdenim3.png";
 // Misc
 @include blueprint-typography;
 
-body {
-  background-color: $body-background-color;
+@mixin centered-layout {
+  margin: 0 auto;
+  max-width: $centered-layout-width;
 }
 
 #container {
