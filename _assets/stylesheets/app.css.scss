@@ -18,8 +18,8 @@ $link-active-color: $link-hover-color;
 $link-hover-color: lighten($link-color, 20%);
 $link-visited-color: $link-color;
 
-$body-background-color: lighten(#54B4EB, 33%);
 $container-background-color: #FFF;
+$body-background-color: #eee;
 
 $container-border-color: #BBC;
 $headline-font-color: $header-color;
@@ -39,12 +39,11 @@ $footer-background-image: "darkdenim3.png";
   max-width: $centered-layout-width;
 }
 
-#container {
-  background-color: $container-background-color;
-  margin: 20px auto;
-  max-width: 900px;
-  padding: 15px;
-  border: 1px solid $container-border-color;
+
+// CSS
+body {
+  background-color: $body-background-color;
+  background-image: image-url($body-background-image);
 }
 
 h1 a {
