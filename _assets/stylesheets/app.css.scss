@@ -66,6 +66,11 @@ h2 {
 h3 {
   padding-top: 15px;
 }
+
+#main {
+  @include centered-layout;
+}
+
 header {
   border-top: 5px solid $header-color;
   border-bottom: 1px solid $header-border-color;
