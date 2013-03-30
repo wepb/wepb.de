@@ -1,6 +1,7 @@
 @import "compass/reset";
 @import "blueprint/typography";
 @import "compass/css3/images";
+@import "compass/layout/sticky-footer";
 
 // Font setting
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -10,6 +11,7 @@ $footer-font-size: $blueprint-font-size + 2px;
 // Layout
 $centered-layout-width: 900px;
 $side-padding: 10px;
+$footer-height: 110px;
 $footer-border-top-width: 5px;
 
 // Colors
@@ -40,6 +42,7 @@ $footer-background-image: "darkdenim3.png";
 
 // Misc
 @include blueprint-typography;
+@include sticky-footer($footer-height + $footer-border-top-width, "#container", "#footer-push", "#footer");
 
 @mixin centered-layout($padding-top, $padding-bottom) {
   margin: 0 auto;
@@ -88,6 +91,7 @@ header {
 }
 
 footer {
+  height: $footer-height;
   border-top: $footer-border-top-width solid $header-color;
   background-color: $footer-background-color;
   background-image: image-url($footer-background-image);
