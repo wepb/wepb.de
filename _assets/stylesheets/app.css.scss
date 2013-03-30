@@ -37,8 +37,9 @@ $footer-background-image: "darkdenim3.png";
 // Misc
 @include blueprint-typography;
 
-@mixin centered-layout {
+@mixin centered-layout($padding-top, $padding-bottom) {
   margin: 0 auto;
+  padding: $padding-top $side-padding $padding-bottom $side-padding;
   max-width: $centered-layout-width;
 }
 
@@ -52,7 +53,6 @@ body {
 h1 {
   // TODO: Replace with logo image
   // @replace-text-with-dimensions($logo-image);
-  color: $header-color;
   margin: 0;
   a {
   text-decoration: none;
@@ -63,7 +63,7 @@ h2 {
   display: block;
   border-bottom: 1px solid $headline-border-color;
   color: $headline-font-color;
-  padding: 40px 15px 2px 0;
+  padding-top: 40px;
 }
 
 h3 {
@@ -71,7 +71,7 @@ h3 {
 }
 
 #main {
-  @include centered-layout;
+  @include centered-layout(0, 100px);
 }
 
 header {
@@ -79,19 +79,16 @@ header {
   border-bottom: 1px solid $header-border-color;
   background-color: $header-background-color;
   #header-content {
-    @include centered-layout;
-    padding: 30px 0;
+    @include centered-layout(30px, 30px);
   }
 }
 
 footer {
-  margin-top: 100px;
   border-top: 5px solid $header-color;
   background-color: $footer-background-color;
   background-image: image-url($footer-background-image);
   #footer-content {
-    @include centered-layout;
-    padding: 40px 0;
+    @include centered-layout(40px, 0);
     color: $footer-font-color;
   }
 }
