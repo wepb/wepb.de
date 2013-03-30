@@ -4,6 +4,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/general/float";
 @import "compass/layout/sticky-footer";
+@import "compass/typography/text/replacement";
 
 // Font setting
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -50,6 +51,13 @@ $footer-background-image: "darkdenim3.png";
   margin: 0 auto;
   padding: $padding-top $side-padding $padding-bottom $side-padding;
   max-width: $centered-layout-width;
+}
+
+@mixin replace-image($image) {
+  @include replace-text(image-url($image));
+  display: block;
+  width: image-width("_assets/images/" + $image);
+  height: image-height("_assets/images/" + $image);
 }
 
 
