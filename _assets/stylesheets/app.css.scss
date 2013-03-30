@@ -67,15 +67,6 @@ body {
   background-image: image-url($body-background-image);
 }
 
-h1 {
-  // TODO: Replace with logo image
-  // @include replace-text-with-dimensions($logo-image);
-  margin: 0;
-  a {
-    text-decoration: none;
-  }
-}
-
 h2 {
   display: block;
   border-bottom: 1px solid $headline-border-color;
@@ -96,7 +87,15 @@ header {
   border-bottom: 1px solid $header-border-color;
   background-color: $header-background-color;
   #header-content {
-    @include centered-layout(30px, 30px);
+    @include centered-layout(25px, 25px);
+    h1 {
+      margin: 0;
+      a {
+        text-decoration: none;
+        margin: 0 auto;
+        @include replace-image($logo-image);
+      }
+    }
   }
 }
 
