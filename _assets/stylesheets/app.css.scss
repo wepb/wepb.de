@@ -1,6 +1,8 @@
 @import "compass/reset";
 @import "blueprint/typography";
 @import "compass/css3/images";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/float";
 @import "compass/layout/sticky-footer";
 
 // Font setting
@@ -59,11 +61,11 @@ body {
 
 h1 {
   // TODO: Replace with logo image
-  // @replace-text-with-dimensions($logo-image);
+  // @include replace-text-with-dimensions($logo-image);
   margin: 0;
   a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -97,7 +99,17 @@ footer {
   background-image: image-url($footer-background-image);
   #footer-content {
     @include centered-layout(40px, 0);
+    @include clearfix;
     color: $footer-font-color;
     font-size: $footer-font-size;
+    a {
+      @include float-left;
+      margin-right: 30px;
+      color: $footer-link-color;
+    }
+    span {
+      @include float-right;
+      font-style: italic;
+    }
   }
 }
