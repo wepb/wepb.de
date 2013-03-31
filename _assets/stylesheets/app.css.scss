@@ -44,6 +44,7 @@ $header-border-color: $headline-border-color;
 $logo-image: "logo.png";
 $body-background-image: "furley_bg.png";
 $footer-background-image: "darkdenim3.png";
+$icon-padding: 20px;
 
 // Misc
 @include blueprint-typography;
@@ -119,5 +120,38 @@ footer {
       @include float-right;
       font-style: italic;
     }
+  }
+}
+
+// Icons
+#aboutus h2 {
+  @include icon-before($icon-question-sign, $icon-padding);
+}
+#next-meeting {
+  h2 {
+    @include icon-before($icon-bullhorn, $icon-padding);
+  }
+  h3#themen {
+    @include icon-before($icon-list-ol, $icon-padding);
+  }
+  h3#location {
+    @include icon-before($icon-map-marker, $icon-padding);
+  }
+}
+#archive h2 {
+  @include icon-before($icon-backward, $icon-padding);
+}
+#contact {
+  h2 {
+    @include icon-before($icon-exchange, $icon-padding);
+  }
+  h3#contact-mail {
+    @include icon-before($icon-envelope, $icon-padding);
+  }
+  h3#contact-mailinglist {
+    @include icon-before($icon-group, $icon-padding);
+  }
+  h3#contact-twitter {
+    @include icon-before($icon-twitter, $icon-padding); 
   }
 }
