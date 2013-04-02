@@ -1,12 +1,26 @@
 @import "compass/reset";
 @import "blueprint/typography";
+@import "compass/css3/images";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/float";
+@import "compass/layout/sticky-footer";
+@import "compass/typography/text/replacement";
+
+@import "font-awesome";
 
 // Font setting
 $blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-$blueprint-font-size: 13px;
+$blueprint-font-size: 15px;
+$footer-font-size: $blueprint-font-size + 2px;
+
+// Layout
+$centered-layout-width: 900px;
+$side-padding: 10px;
+$footer-height: 110px;
+$footer-border-top-width: 5px;
 
 // Colors
-$font-color: #555;
+$font-color: #444;
 $header-color: #317EAC;
 $link-color: $header-color;
 $link-focus-color: $link-hover-color;
@@ -14,33 +28,132 @@ $link-active-color: $link-hover-color;
 $link-hover-color: lighten($link-color, 20%);
 $link-visited-color: $link-color;
 
-$body-background-color: lighten(#54B4EB, 33%);
-$container-background-color: #FFF;
+$body-background-color: #eee;
 
-$container-border-color: #BBC;
+$headline-font-color: $header-color;
+$headline-border-color: #ccc;
+
+$footer-background-color: #444;
+$footer-font-color: #ccc;
+$footer-link-color: $footer-font-color;
+
+$header-background-color: #f9f9f9;
+$header-border-color: $headline-border-color;
+
+// Images
+$logo-image: "logo.png";
+$body-background-image: "furley_bg.png";
+$footer-background-image: "darkdenim3.png";
+$icon-padding: 20px;
 
 // Misc
-$logo-image: "/images/logo.png";
-
 @include blueprint-typography;
+@include sticky-footer($footer-height + $footer-border-top-width, "#container", "#footer-push", "#footer");
 
+@mixin centered-layout($padding-top, $padding-bottom) {
+  margin: 0 auto;
+  padding: $padding-top $side-padding $padding-bottom $side-padding;
+  max-width: $centered-layout-width;
+}
+
+@mixin replace-image($image) {
+  @include replace-text(image-url($image));
+  display: block;
+  width: image-width("_assets/images/" + $image);
+  height: image-height("_assets/images/" + $image);
+}
+
+
+// CSS
 body {
   background-color: $body-background-color;
+  background-image: image-url($body-background-image);
 }
 
-#container {
-  background-color: $container-background-color;
-  margin: 20px auto;
-  max-width: 900px;
-  padding: 15px;
-  border: 1px solid $container-border-color;
+h2 {
+  border-bottom: 1px solid $headline-border-color;
+  color: $headline-font-color;
+  padding-top: 40px;
 }
 
-h1 a {
-  // TODO: Replace with logo image
-  // @replace-text-with-dimensions($logo-image);
-  color: $header-color;
-  text-decoration: none;
+h3 {
+  padding-top: 15px;
+}
+
+#main {
+  @include centered-layout(0, 100px);
+}
+
+header {
+  border-top: 5px solid $header-color;
+  border-bottom: 1px solid $header-border-color;
+  background-color: $header-background-color;
+  #header-content {
+    @include centered-layout(25px, 25px);
+    h1 {
+      margin: 0;
+      a {
+        text-decoration: none;
+        margin: 0 auto;
+        @include replace-image($logo-image);
+      }
+    }
+  }
+}
+
+footer {
+  height: $footer-height;
+  border-top: $footer-border-top-width solid $header-color;
+  background-color: $footer-background-color;
+  background-image: image-url($footer-background-image);
+  #footer-content {
+    @include centered-layout(40px, 0);
+    @include clearfix;
+    color: $footer-font-color;
+    font-size: $footer-font-size;
+    a {
+      @include float-left;
+      margin-right: 30px;
+      color: $footer-link-color;
+    }
+    span {
+      @include float-right;
+      font-style: italic;
+    }
+  }
+}
+
+// Icons
+#aboutus h2 {
+  @include icon-before($icon-question-sign, $icon-padding);
+}
+#next-meeting {
+  h2 {
+    @include icon-before($icon-bullhorn, $icon-padding);
+  }
+  h3#themen {
+    @include icon-before($icon-list-ol, $icon-padding);
+  }
+  h3#location {
+    @include icon-before($icon-map-marker, $icon-padding);
+  }
+}
+#archive h2 {
+  @include icon-before($icon-backward, $icon-padding);
+}
+#contact {
+  h2 {
+    @include icon-before($icon-exchange, $icon-padding);
+  }
+  h3#contact-mail {
+    @include icon-before($icon-envelope, $icon-padding);
+  }
+  h3#contact-mailinglist {
+    @include icon-before($icon-group, $icon-padding);
+  }
+  h3#contact-twitter {
+    @include icon-before($icon-twitter, $icon-padding); 
+  }
 }
 
 .map {
