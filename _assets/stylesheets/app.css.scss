@@ -142,16 +142,23 @@ footer {
   @include icon-before($icon-backward, $icon-padding);
 }
 #contact {
+  @include clearfix;
   h2 {
     @include icon-before($icon-exchange, $icon-padding);
   }
-  h3#contact-mail {
+  section {
+    @include float-left;
+    border-right: 1px solid $headline-border-color;
+    margin-right: 30px;
+    width: ($centered-layout-width / 3) - 35px;
+  }
+  #contact-mail h3{
     @include icon-before($icon-envelope, $icon-padding);
   }
-  h3#contact-mailinglist {
+  #contact-mailinglist h3{
     @include icon-before($icon-group, $icon-padding);
   }
-  h3#contact-twitter {
+  #contact-twitter h3 {
     @include icon-before($icon-twitter, $icon-padding); 
   }
 }
