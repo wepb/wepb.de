@@ -44,7 +44,7 @@ $header-border-color: $headline-border-color;
 $logo-image: "logo.png";
 $body-background-image: "furley_bg.png";
 $footer-background-image: "darkdenim3.png";
-$icon-padding: 20px;
+$icon-padding: 25px;
 
 // Misc
 @include blueprint-typography;
@@ -129,7 +129,7 @@ footer {
 }
 #next-meeting {
   h2 {
-    @include icon-before($icon-bullhorn, $icon-padding);
+    @include icon-before($icon-calendar, $icon-padding);
   }
   h3#themen {
     @include icon-before($icon-list-ol, $icon-padding);
