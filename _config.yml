@@ -1,2 +1,2 @@
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor']
 permalink: none
