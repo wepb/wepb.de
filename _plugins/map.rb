@@ -63,7 +63,7 @@ module Jekyll
         end
       end
 
-      "images/maps/#{image_file}"
+      "/images/maps/#{image_file}"
     end
 
     def geocode(address)
