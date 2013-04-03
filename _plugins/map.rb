@@ -1,7 +1,7 @@
 require 'geocoder'
 require 'digest'
 require 'net/http'
-require 'pp'
+require 'erb'
 
 module Jekyll
   class MapTag < Liquid::Tag
@@ -22,6 +22,7 @@ module Jekyll
 
     def render(context)
       address = context["page"]["address"]
+      location = context["page"]["location"]
       result = geocode(address)
       options = {
         lat: result.latitude,
@@ -34,6 +35,10 @@ module Jekyll
 
       %(<div class="map">
           <img src="#{image}" alt="" />
+          <span class="map-links">
+            <a href="http://www.openstreetmap.org/?mlat=#{result.latitude}&amp;mlon=#{result.longitude}&amp;zoom=16">Openstreetmap</a>
+            <a href="http://maps.google.com/maps?q=#{ERB::Util.url_encode("#{location}, #{address}")}&amp;ll=#{result.latitude},#{result.longitude}&amp;t=m&amp;z=16">Google Maps</a>
+          </span>
           <span class="attribution">
             &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors,
             <a href="http://www.openstreetmap.org/copyright">Lizenz</a>

@@ -159,12 +159,27 @@ footer {
 .map {
   position: relative;
 
-  .attribution {
+  .attribution, .map-links {
     display: block;
     position: absolute;
     bottom: 5px;
-    right: 0;
     padding: 2px 6px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  .attribution {
+    right: 0;
+  }
+
+  .map-links {
+    left: 0;
+    a {
+      @include icon-before($icon-external-link, 5px);
+      text-decoration: none;
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
   }
 }
