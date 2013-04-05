@@ -74,6 +74,9 @@ h2 {
   border-bottom: 1px solid $headline-border-color;
   color: $headline-font-color;
   padding-top: 20px;
+  @media screen and (max-width: 400px) {
+    font-size: 1.5em;
+  }
 }
 
 h3 {
@@ -97,6 +100,15 @@ header {
     h1 {
       margin: 0;
       font-size: 3.5em;
+      @media screen and (max-width: 510px) {
+        font-size: 3em;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 2.5em;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 2em;
+      }
       a {
         text-decoration: none;
         margin: 0 auto;
@@ -166,21 +178,23 @@ $contact-column-inner-width: (100% - ($contact-column-count * 2 - 2) * $contact-
   h2 {
     @include icon-before($icon-exchange, $icon-padding);
   }
-  section {
-    @include float-left;
-    @include box-sizing(border-box);
-    border-right: 1px solid $headline-border-color;
-    padding: 0 30px;
-    width: $contact-column-inner-width + 2 * $contact-column-padding;
-    &:first-child, &:last-child {
-      width: $contact-column-inner-width + $contact-column-padding;
-    }
-    &:first-child {
-      padding-left: 0;
-    }
-    &:last-child {
-      padding-right: 0;
-      border-right: none;
+  @media screen and (min-width: 750px) {
+    section {
+      @include float-left;
+      @include box-sizing(border-box);
+      border-right: 1px solid $headline-border-color;
+      padding: 0 30px;
+      width: $contact-column-inner-width + 2 * $contact-column-padding;
+      &:first-child, &:last-child {
+        width: $contact-column-inner-width + $contact-column-padding;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
     }
   }
   #contact-mail h3{
