@@ -1,6 +1,5 @@
 @import "compass/reset";
-@import "blueprint/typography";
-@import "compass/css3/images";
+@import "compass/css3";
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/general/float";
 @import "compass/layout/sticky-footer";
@@ -23,9 +22,9 @@ $footer-border-top-width: 5px;
 $font-color: #444;
 $header-color: #317EAC;
 $link-color: $header-color;
+$link-hover-color: lighten($link-color, 20%);
 $link-focus-color: $link-hover-color;
 $link-active-color: $link-hover-color;
-$link-hover-color: lighten($link-color, 20%);
 $link-visited-color: $link-color;
 
 $body-background-color: #eee;
@@ -47,6 +46,7 @@ $footer-background-image: "darkdenim3.png";
 $icon-padding: 25px;
 
 // Misc
+@import "blueprint/typography";
 @include blueprint-typography;
 @include sticky-footer($footer-height + $footer-border-top-width, "#container", "#footer-push", "#footer");
 
@@ -141,16 +141,36 @@ footer {
 #archive h2 {
   @include icon-before($icon-backward, $icon-padding);
 }
+
+
+$contact-column-padding: 5%;
+$contact-column-count: 3;
+$contact-column-inner-width: (100% - ($contact-column-count * 2 - 2) * $contact-column-padding) / $contact-column-count;
+
+
 #contact {
-  @include clearfix;
+  div.wrapper  {
+    @include clearfix;
+  }
   h2 {
     @include icon-before($icon-exchange, $icon-padding);
   }
   section {
     @include float-left;
+    @include box-sizing(border-box);
     border-right: 1px solid $headline-border-color;
-    margin-right: 30px;
-    width: ($centered-layout-width / 3) - 35px;
+    padding: 0 30px;
+    width: $contact-column-inner-width + 2 * $contact-column-padding;
+    &:first-child, &:last-child {
+      width: $contact-column-inner-width + $contact-column-padding;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
   }
   #contact-mail h3{
     @include icon-before($icon-envelope, $icon-padding);
