@@ -197,6 +197,10 @@ $contact-column-inner-width: (100% - ($contact-column-count * 2 - 2) * $contact-
 .map {
   position: relative;
 
+  img {
+    max-width: 100%;
+  }
+
   .attribution, .map-links {
     display: block;
     position: absolute;
