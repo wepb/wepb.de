@@ -4,7 +4,7 @@ title:  "Erstes Treffen am 05.06.2013 um 19 Uhr"
 date:   2013-03-23 13:44:51
 event-date: 2013-05-06 19:00:00
 location: Coworkingspace Netting
-address: Technologiepark 13
+address: Technologiepark 13, Paderborn
 categories: events
 ---
 
@@ -26,4 +26,4 @@ Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
 Coworkingspace Netting - Technologiepark 13
 
-KARTE
+{% map %}

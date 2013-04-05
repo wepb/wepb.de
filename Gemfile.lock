@@ -27,6 +27,7 @@ GEM
     directory_watcher (1.4.1)
     fast-stemmer (1.0.2)
     fssm (0.2.10)
+    geocoder (1.1.6)
     highline (1.6.16)
     hike (1.2.1)
     jekyll-assets (0.3.5)
@@ -58,5 +59,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  geocoder
   jekyll!
   jekyll-assets

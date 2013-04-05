@@ -182,3 +182,31 @@ $contact-column-inner-width: (100% - ($contact-column-count * 2 - 2) * $contact-
     @include icon-before($icon-twitter, $icon-padding); 
   }
 }
+
+.map {
+  position: relative;
+
+  .attribution, .map-links {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    padding: 2px 6px;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  .attribution {
+    right: 0;
+  }
+
+  .map-links {
+    left: 0;
+    a {
+      @include icon-before($icon-external-link, 5px);
+      text-decoration: none;
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+  }
+}
