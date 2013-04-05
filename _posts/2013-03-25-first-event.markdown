@@ -17,13 +17,19 @@ im Technologiepark 13 statt.
 
 Wir haben folgende Vorträge für euch organisiert:
 
-* SQL vs. NoSQL (Stefan Löhers)
-* Coffeescript - Next Generation Javascript? (Moritz Breit)
+#### Responsive in the wild – Möglichkeiten und Grenzen von Responsive Design
+[Max Effenberger](http://www.xing.com/profile/Max_Effenberger) referiert über die neuen Möglichkeiten um die verschiedenen Darstellungen
+je nach Device unter einer Codebasis zu bringen.
 
-Vorschläge für Themen und Referenten werden immer gerne gesehen!
+#### Workflows in Versionsverwaltungssystemen
+[Moritz Breit](http://www.xing.com/profile/Moritz_Breit) vermittelt moderne Verfahren eines Versionsverwaltungssystems (wie GIT),
+um effizient und innerhalb eines Team ein qualitatives Softwareprodukt zu schaffen und zu pflegen.
+
+
+Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
 ### Location
 
-Coworkingspace Netting - Technologiepark 13
+[Coworkingspace Netting](http://coworkingpaderborn.de/) - Technologiepark 13
 
 {% map %}
