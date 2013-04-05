@@ -80,6 +80,10 @@ h3 {
   padding-top: 15px;
 }
 
+h1, h2, h3 {
+  font-family: 'Arvo', serif;
+}
+
 #main {
   @include centered-layout(0, 100px);
 }
@@ -92,10 +96,17 @@ header {
     @include centered-layout(25px, 25px);
     h1 {
       margin: 0;
+      font-size: 3.5em;
       a {
         text-decoration: none;
         margin: 0 auto;
-        @include replace-image($logo-image);
+        color: black;
+      }
+      .logo-bold {
+        font-weight: bold;
+      }
+      .logo-protocol {
+        color: $header-color;
       }
     }
   }
