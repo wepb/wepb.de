@@ -17,14 +17,9 @@ im Technologiepark 13 statt.
 
 Wir haben folgende Vorträge für euch organisiert:
 
-#### Responsive in the wild – Möglichkeiten und Grenzen von Responsive Design
-[Max Effenberger](http://www.xing.com/profile/Max_Effenberger) referiert über die neuen Möglichkeiten um die verschiedenen Darstellungen
-je nach Device unter einer Codebasis zu bringen.
-
-#### Workflows in Versionsverwaltungssystemen
-[Moritz Breit](http://www.xing.com/profile/Moritz_Breit) vermittelt moderne Verfahren eines Versionsverwaltungssystems (wie GIT),
-um effizient und innerhalb eines Team ein qualitatives Softwareprodukt zu schaffen und zu pflegen.
-
+* Responsive in the wild – Möglichkeiten und Grenzen von Responsive Design (Max
+  Effenberger)
+* Workflows mit Git (Moritz Breit)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
