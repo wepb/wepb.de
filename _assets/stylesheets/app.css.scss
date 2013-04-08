@@ -188,8 +188,9 @@ $contact-column-inner-width: (100% - ($contact-column-count * 2 - 2) * $contact-
       @include float-left;
       @include box-sizing(border-box);
       border-right: 1px solid $headline-border-color;
-      padding: 0 30px;
+      padding: 0 $contact-column-padding;
       width: $contact-column-inner-width + 2 * $contact-column-padding;
+      min-height: 130px;
       &:first-child, &:last-child {
         width: $contact-column-inner-width + $contact-column-padding;
       }
