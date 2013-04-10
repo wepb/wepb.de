@@ -1,11 +1,11 @@
 {
   "built_on": "master",
-  "duration": 4.788,
-  "full_display_name": "wepb.de #4",
-  "id": "2013-04-11_01-33-23",
-  "number": 4,
+  "duration": 6.632,
+  "full_display_name": "wepb.de #5",
+  "id": "2013-04-11_01-35-45",
+  "number": 5,
   "result": "SUCCESS",
   "status_message": "?",
-  "time": "2013-04-11 01:33:23 +0200",
-  "url": "job/wepb.de/4/"
+  "time": "2013-04-11 01:35:45 +0200",
+  "url": "job/wepb.de/5/"
 }
