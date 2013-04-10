@@ -122,7 +122,8 @@ header {
       .logo-bold {
         font-weight: bold;
       }
-      .logo-protocol {
+      .logo-protocol:after {
+        content: '://';
         color: $header-color;
       }
     }
