@@ -26,5 +26,3 @@ Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 ### Location
 
 [Coworkingspace Netting](http://coworkingpaderborn.de/) - Technologiepark 13
-
-{% map %}

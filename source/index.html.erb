@@ -1,16 +1,16 @@
 ---
-layout: default
 title: Webentwickler { Paderborn }
 ---
 
 <section id="aboutus">
-  {% include about.html %}
+  <%= partial "about" %>
 </section>
 
 <section id="next-meeting">
-  {% assign current = site.categories.events.first %}
-
-  {{ current.content }}
+  <% next_event = sitemap.resources.select { |r| r.path.start_with?("events/") }.first %>
+  <%= next_event.render(layout: false) %>
+  <% page = next_event.metadata[:page] %>
+  <%= render_map(page['address'], page['location']) %>
 </section>
 
 <!-- <section id="archive"> -->
@@ -23,6 +23,6 @@ title: Webentwickler { Paderborn }
 <!-- </section> -->
 
 <section id="contact">
-  {% include contact.html %}
+  <%= partial "contact" %>
 </section>
 
