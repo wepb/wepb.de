@@ -8,7 +8,7 @@ title: Webentwickler Paderborn
 
 <section id="next-meeting">
   <% next_event = sitemap.resources.select { |r| r.path.start_with?("events/") }.first %>
-  <%= next_event.render(layout: false) %>
+  <%= next_event.app.render_template(next_event.source_file, {}, layout: false) %>
   <% page = next_event.metadata[:page] %>
   <%= render_map(page['address'], page['location']) %>
 </section>
