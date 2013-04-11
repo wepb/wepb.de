@@ -42,11 +42,11 @@ module MapHelpers
     params = options.map { |key, value| "#{key}=#{value}" }.join("&")
     src = "/StaticMap/?#{params}"
 
-    image_dir = "source/images/maps"
+    maps_dir = File.join(output_images_dir, "maps")
     image_file = Digest::SHA1.hexdigest(src) + ".png"
-    image_path = File.join(image_dir, image_file)
+    image_path = File.join(maps_dir, image_file)
     unless File.exist?(image_path)
-      FileUtils.mkdir_p(image_dir)
+      FileUtils.mkdir_p(maps_dir)
       Net::HTTP.start("ojw.dev.openstreetmap.org") do |http|
         resp = http.get(src)
         open(image_path, "wb") do |file|
@@ -68,6 +68,10 @@ module MapHelpers
     end
 
     result
+  end
+
+  def output_images_dir
+    File.join(build? ? build_dir : source, images_dir)
   end
 end
 
