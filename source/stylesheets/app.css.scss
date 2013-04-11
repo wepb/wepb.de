@@ -123,6 +123,10 @@ header {
         font-weight: bold;
       }
       .logo-protocol {
+        text-transform:lowercase;
+      }
+      .logo-protocol:after {
+        content: '://';
         color: $header-color;
       }
     }
