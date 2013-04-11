@@ -18,6 +18,10 @@ module Event
       page['event-date']
     end
 
+    def title
+      page['title']
+    end
+
     def page
       metadata[:page]
     end

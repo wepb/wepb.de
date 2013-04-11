@@ -14,5 +14,10 @@ module Event
       # TODO: check event dates
       events.first
     end
+
+    def past_events
+      events = self.events
+      events - [events.first]
+    end
   end
 end

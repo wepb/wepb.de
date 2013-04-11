@@ -12,14 +12,16 @@ title: Webentwickler Paderborn
   <%= render_map(next_event.address, next_event.location) %>
 </section>
 
-<!-- <section id="archive"> -->
-<!--   <h2>Letzte Treffen</h2> -->
-<!--   <ul> -->
-<!--     {% for post in site.categories.events %} -->
-<!--       <li><span>{{ post.event&#45;date | date: "%d.%m.%Y" }}</span> &#45; <a href="{{ post.url }}">{{ post.title }}</a></li> -->
-<!--     {% endfor %} -->
-<!--   </ul> -->
-<!-- </section> -->
+<% if past_events.any? %>
+  <section id="archive">
+    <h2>Letzte Treffen</h2>
+    <ul>
+      <% past_events.each do |event| %>
+        <li><span><%= event.date.strftime("%d.%m.%Y") %></span> - <%= link_to event.title, event.resource %></li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
 
 <section id="contact">
   <%= partial "contact" %>
