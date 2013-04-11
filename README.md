@@ -14,5 +14,7 @@ Setup
 Lokale Entwicklung
 ------------------
 
-`bundle exec jekyll serve -w`
+`bundle exec middleman`
+
+Der Server startet daraufhin unter http://localhost:4567.
 
