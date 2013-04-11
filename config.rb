@@ -52,6 +52,9 @@ activate :livereload
 require "lib/map"
 helpers MapHelpers
 
+require "lib/event/event_helpers"
+helpers Event::EventHelpers
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
