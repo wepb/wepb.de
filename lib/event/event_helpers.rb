@@ -7,7 +7,7 @@ module Event
     end
 
     def events
-      event_resources.map { |r| ::Event::Event.new(r) }.sort_by { |e| e.date }.reverse
+      event_resources.map { |r| wrap_resource(r) }.sort_by(&:date).reverse
     end
 
     def next_event
@@ -16,8 +16,11 @@ module Event
     end
 
     def past_events
-      events = self.events
-      events - [events.first]
+      events - [next_event]
+    end
+
+    def wrap_resource(resource)
+      resource.metadata[:event_object] || Event.new(resource)
     end
   end
 end

@@ -4,6 +4,7 @@ module Event
 
     def initialize(resource)
       self.resource = resource
+      resource.add_metadata(event_object: self)
     end
 
     def address
@@ -36,6 +37,10 @@ module Event
 
     def render_partial
       app.render_template(resource.source_file, {}, layout: false)
+    end
+
+    def ==(other)
+      resource == other.resource
     end
   end
 end
