@@ -55,7 +55,7 @@ module MapHelpers
       end
     end
 
-    File.join(images_dir, "maps", image_file)
+    "/#{images_dir}/maps/#{image_file}"
   end
 
   def geocode(address)
