@@ -26,7 +26,7 @@ module MapHelpers
     image = get_map(DEFAULT_OPTIONS.dup.merge(options))
 
     %(<div class="map">
-        <img src="#{image}" alt="" />
+        #{image_tag image}
         <span class="map-links">
           <a href="http://www.openstreetmap.org/?mlat=#{result.latitude}&amp;mlon=#{result.longitude}&amp;zoom=16">Openstreetmap</a>
           <a href="http://maps.google.com/maps?q=#{ERB::Util.url_encode("#{location}, #{address}")}&amp;ll=#{result.latitude},#{result.longitude}&amp;t=m&amp;z=16">Google Maps</a>
@@ -55,7 +55,7 @@ module MapHelpers
       end
     end
 
-    "/#{images_dir}/maps/#{image_file}"
+    "maps/#{image_file}"
   end
 
   def geocode(address)
