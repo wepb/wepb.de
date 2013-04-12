@@ -12,7 +12,7 @@
       <header id="header">
         <div id="header-content">
           <h1>
-            <a href="/">
+            <a href="<%= url_for("/index.html", relative: true) %>">
               <span class="logo-bold"><span class="logo-protocol">Web</span>entwickler</span>
               <br/>
               <span class="logo-city">Paderborn</span>
@@ -30,7 +30,7 @@
 
     <footer id="footer">
       <div id="footer-content">
-        <a href="/imprint.html">Impressum</a>
+        <%= link_to "Impressum", "/imprint.html", relative: true %>
         <span>Webentwickler Paderborn</span>
       </div>
     </footer>
