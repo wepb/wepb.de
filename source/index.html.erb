@@ -1,0 +1,29 @@
+---
+title: Webentwickler Paderborn
+---
+
+<section id="aboutus">
+  <%= partial "about" %>
+</section>
+
+<section id="next-meeting">
+  <%= next_event.render_partial %>
+
+  <%= render_map(next_event.address, next_event.location) %>
+</section>
+
+<% if past_events.any? %>
+  <section id="archive">
+    <h2>Letzte Treffen</h2>
+    <ul>
+      <% past_events.each do |event| %>
+        <li><span><%= event.date.strftime("%d.%m.%Y") %></span> - <%= link_to event.title, event.resource %></li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
+
+<section id="contact">
+  <%= partial "contact" %>
+</section>
+

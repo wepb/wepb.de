@@ -1,8 +1,0 @@
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor']
-permalink: none
-assets:
-  sources:
-    - _assets/stylesheets
-    - _assets/fonts
-    - _assets/images
-    - _assets/javascripts
