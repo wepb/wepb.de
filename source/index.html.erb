@@ -14,10 +14,10 @@ title: Webentwickler Paderborn
 
 <% if past_events.any? %>
   <section id="archive">
-    <h2>Letzte Treffen</h2>
+    <h2>Letzte Treffen mit Vortragsfolien und Fotos</h2>
     <ul>
       <% past_events.each do |event| %>
-        <li><span><%= event.date.strftime("%d.%m.%Y") %></span> - <%= link_to event.title, event.resource %></li>
+        <li><%= link_to "#{event.title} (#{event.topics})", event.resource, relative: true %></li>
       <% end %>
     </ul>
   </section>
