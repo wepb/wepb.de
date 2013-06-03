@@ -17,7 +17,7 @@ title: Webentwickler Paderborn
     <h2>Letzte Treffen mit Vortragsfolien und Fotos</h2>
     <ul>
       <% past_events.each do |event| %>
-        <li><%= link_to "#{event.title} (#{event.topics})", event.resource %></li>
+        <li><%= link_to "#{event.title} (#{event.topics})", event.resource, relative: true %></li>
       <% end %>
     </ul>
   </section>
