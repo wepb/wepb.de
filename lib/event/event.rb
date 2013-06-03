@@ -23,6 +23,10 @@ module Event
       page['title']
     end
 
+    def topics
+      page['topics']
+    end
+
     def page
       metadata[:page]
     end
