@@ -26,3 +26,8 @@ Wir hatten folgende Vorträge für euch organisiert:
 
 [Coworkingspace Netting](http://coworkingpaderborn.de/) - Technologiepark 13
 
+### Bilder
+
+<% %w(022 026-2 038 056 084 016).each do |image| %>
+  <%= link_to image_tag("events/2013-05/#{image}.jpeg", style: "width: 440px; padding-right: 10px; padding-bottom: 5px"), image_path("events/2013-05/#{image}.jpeg") %>
+<% end %>
