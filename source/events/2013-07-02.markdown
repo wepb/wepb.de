@@ -1,21 +1,22 @@
 ---
 layout: post
-title:  "Nächstes Treffen am Dienstag, den 02.07.2013 um 19 Uhr"
+title:  "Treffen am Dienstag, den 02.07.2013 um 19 Uhr"
 date:   2013-05-29 16:29:00
 event-date: 2013-07-02 19:00:00
 location: Coworkingspace Netting
 address: Technologiepark 13, Paderborn
+topics: Bash mit Dialog und D3.js
 categories: events
 ---
 
-## Nächstes Treffen
+## Treffen am 02.07.2013
 
-Das nächste Treffen findet am *Dienstag*, den **2. Juli 2013** um **19 Uhr** im Coworkingspace Netting
+Das letzte Treffen fand am *Dienstag*, den **2. Juli 2013** um **19 Uhr** im Coworkingspace Netting
 im Technologiepark 13 statt.
 
 ### Themen
 
-Wir haben folgende Vorträge für euch organisiert:
+Wir hatten folgende Vorträge für euch organisiert:
 
 * Bash mit Dialog (Alexander Wilhelm)
 * Datengetriebene Visualisierungen mit D3.js (Johannes Lattrich)

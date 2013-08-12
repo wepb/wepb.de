@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Nächstes Treffen am Montag, den 02.09.2013 um 19 Uhr"
+date:   2013-08-12 19:10:00
+event-date: 2013-09-02 19:00:00
+location: Coworkingspace Netting
+address: Technologiepark 13, Paderborn
+categories: events
+---
+
+## Nächstes Treffen
+
+Das nächste Treffen findet am *Montag*, den **2. September 2013** um **19 Uhr** im Coworkingspace Netting
+im Technologiepark 13 statt.
+
+### Themen
+
+Vortragsthemen werden in Kürze bekannt gegeben.
+
+Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
+
+### Location
+
+[Coworkingspace Netting](http://coworkingpaderborn.de/) - Technologiepark 13
