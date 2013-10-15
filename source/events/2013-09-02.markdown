@@ -17,7 +17,7 @@ im Technologiepark 13 statt.
 
 Wir hatten folgende Vorträge für euch organisiert:
 
-* Angular.JS (Adrian Fahle)
+* Angular.JS (Adrian Fahle) [Vortrag und Live-Coding](https://speakerdeck.com/adifah/angularjs)
 * node.js (Stefan Löhers) [Folien und Code](https://github.com/stefpb/node-js_slides)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
