@@ -18,7 +18,7 @@ im Technologiepark 13 statt.
 Wir hatten folgende Vorträge für euch organisiert:
 
 * Puppen spielen mit Landstreichern — entwickeln mit Vagrant (und ein bisschen Puppet) (Elmar Athmer)
-* JavaScript-Entwicklung mit den Chrome DevTools (Volker Rose)
+* JavaScript-Entwicklung mit den Chrome DevTools (Volker Rose) [Links und Resourcen](http://volker-rose.de/blog/resources-on-developing-with-the-chrome-devtools-resources/)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
