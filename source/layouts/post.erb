@@ -1,5 +1,17 @@
 <% wrap_layout :layout do %>
   <div id="post">
+    <h2>Treffen am <%= I18n.l(event.date, format: "%e. %B") %></h2>
+
+    <p>
+      Dieses Treffen fand am
+      <%= I18n.l(event.date, format: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>") %>
+      <%= event.location_text %> statt.
+    </p>
+
+    <h3>Themen</h3>
+
+    <p>Wir hatten folgende Vorträge für euch organisiert:</p>
+
     <%= yield %>
 
     <%# render_map %>

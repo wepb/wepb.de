@@ -7,6 +7,18 @@ title: Webentwickler Paderborn
 </section>
 
 <section id="next-meeting">
+  <h2>Nächstes Treffen</h2>
+  
+  <p>
+    Das nächste Treffen findet am
+    <%= I18n.l(next_event.date, format: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>") %>
+    <%= next_event.location_text %> statt.
+  </p>
+
+  <h3>Themen</h3>
+
+  <p>Wir haben folgende Vorträge für euch organisiert:</p>
+
   <%= next_event.render_partial %>
 
   <%= render_map(next_event.address, next_event.location) %>

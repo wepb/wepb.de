@@ -15,6 +15,10 @@ module Event
       page['location']
     end
 
+    def location_text
+      page['location-text']
+    end
+
     def date
       page['event-date']
     end

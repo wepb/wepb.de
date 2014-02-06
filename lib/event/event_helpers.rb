@@ -10,6 +10,10 @@ module Event
       event_resources.map { |r| wrap_resource(r) }.sort_by(&:date).reverse
     end
 
+    def event
+      wrap_resource(current_page)
+    end
+
     def next_event
       # TODO: check event dates
       events.first

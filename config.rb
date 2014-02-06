@@ -48,6 +48,7 @@
 # end
 
 activate :livereload
+activate :i18n, langs: [:de]
 
 require "lib/map"
 helpers MapHelpers
@@ -62,6 +63,8 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 
 set :fonts_dir, 'assets/fonts'
+
+set :time_zone, "Europe/Berlin"
 
 # Build-specific configuration
 configure :build do
