@@ -10,7 +10,7 @@ topics: Chef und Meteor
 categories: events
 ---
 
-* Server-Provisioning mit Chef (Moritz Breit)
+* Leckere Server-Rezepte mit Chef (Moritz Breit)
 * Nach den Sternen greifen...mit Meteor (Philipp Müns)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
