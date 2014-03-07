@@ -4,7 +4,7 @@ title:  "Treffen am Montag, den 10.03.2014 um 19 Uhr"
 date:   2014-02-04 00:18:00
 event-date: 2014-03-10 19:00:00+01:00
 location: Technologiepark 13
-location-text: im Raum B am Bistro im Technologiepark 13
+location-text: im Raum A am Bistro im Technologiepark 13
 address: Technologiepark 13, Paderborn
 topics: Chef und Meteor
 categories: events
@@ -17,4 +17,4 @@ Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
 ### Location
 
-Raum B am Bistro im Technologiepark 13
+Raum A am Bistro im Technologiepark 13
