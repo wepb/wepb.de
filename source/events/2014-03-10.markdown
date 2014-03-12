@@ -11,7 +11,7 @@ categories: events
 ---
 
 * Leckere Server-Rezepte mit Chef (Moritz Breit)
-* Nach den Sternen greifen...mit Meteor (Philipp Müns)
+* Nach den Sternen greifen... mit Meteor (Philipp Müns) [Präsentation](http://de.slideshare.net/pmuens/nach-den-sternen-greifen-mit-meteor) / [Quellcode](https://github.com/pmuens/programming_languages)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
