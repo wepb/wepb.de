@@ -10,7 +10,7 @@ topics: Hoodie
 categories: events
 ---
 
-* Hoodie - Webapplikationen ohne Backend (Philipp Müns)
+* Hoodie - Webapplikationen ohne Backend (Alexander Wolf und Philipp Müns)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
