@@ -10,7 +10,7 @@ topics: Hoodie
 categories: events
 ---
 
-* Hoodie - Webapplikationen ohne Backend (Alexander Wolf und Philipp Müns)
+* Hoodie - Webapplikationen ohne Backend (Alexander Wolf und Philipp Müns) [Präsentation](http://de.slideshare.net/pmuens/hoodie-webapplikationen-ohne-backend) / [Quellcode](https://github.com/pmuens/programming_languages_hoodie)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
