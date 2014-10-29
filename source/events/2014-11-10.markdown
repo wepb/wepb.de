@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Treffen am Montag, den 10.11.2014 um 19 Uhr"
+date:   2014-10-29 17:09:00
+event-date: 2014-11-10 19:00:00+02:00
+location: Technologiepark 13
+location-text: bei Campus Consult im Technologiepark 13
+address: Technologiepark 13, Paderborn
+topics: PHP mit Laravel und Composer; Vim und Emacs
+categories: events
+---
+
+* PHP für coole Kids  - mit Laravel & Composer (Max Effenberger)
+* Moderne Editoren: Vim und Emacs (Moritz Breit)
+
+Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
+
+### Location
+
+Technologiepark 13
