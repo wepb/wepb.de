@@ -2,7 +2,7 @@
 layout: post
 title:  "Treffen am Montag, den 10.11.2014 um 19 Uhr"
 date:   2014-10-29 17:09:00
-event-date: 2014-11-10 19:00:00+02:00
+event-date: 2014-11-10 19:00:00+01:00
 location: Technologiepark 13
 location-text: bei Campus Consult im Technologiepark 13
 address: Technologiepark 13, Paderborn
