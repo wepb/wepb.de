@@ -10,7 +10,7 @@ topics: Backend von ComputerBase
 categories: events
 ---
 
-* Das Backend von ComputerBase (Steffen Weber) [Präsentation](http://steffen185.de/slides/20140901-computerbase-backend.pdf)
+* Das Backend von ComputerBase (Steffen Weber) [Präsentation](https://speakerdeck.com/steffenweber/das-backend-von-computerbase)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
 
